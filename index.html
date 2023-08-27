@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Se va a ver HTML y CSS para la creacion desde 0 de una landingpage utilizando el KIT3 de "Empanadas Maria Marta", le falta muchisimas cosas y muchos detalles de CSS sobre todo pero es un buen inicio para el proyecto, respetando las consignas, el kit y la paleta de colores.(PD: No tiene nada de responsive aun)-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- importar archivo CSS para darle estilo al maquetado del HTML -->
+    <link rel="stylesheet" href="Css/style.css">
+
+    <!-- Importar fuentes -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@300&display=swap');
+    </style>
+    <!-- Titulo en la pestaña del navegador -->
+    <title>Empanadas Maria Marta</title>
+
+    <!-- ponerle icono a la pestaña del navegador -->
+    <link rel="shortcut icon" href="Img/icon.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <!-- Navegador que quedará fija al scrollear durante el recorrido en la pagina -->
+        <nav><a href="#pedido"><label for="">Hace tu pedido</label></a> |
+            <a href="#Nosotros"><label for=""> Sobre Nosotros</label></a> |
+            <a href="#contactform"><label for=""> Contacto</label></a>
+        </nav>
+    </header>
+
+
+
+    <main>
+        <!-- Titulo de la pagina, generalmente se hace en H1 ya que es la primera impresión de la misma -->
+        <section class="tituloprincipal">
+            <div>
+                <img src="Img/3-logo-color.png" alt="">
+                <h1>EMPANADAS ARGENTINAS</h1>
+            </div>
+        </section>
+        <hr> <!-- Línea divisoria  -->
+
+
+        <!-- "Productos" se muestra el contenido importante de la pagina, las empanadas, se crearon div para cada "sabor" en este caso para poder tener mas ordenada esta seccion -->
+        <section class="Productos">
+            <div>
+                <h2> Nuestros Productos</h2>
+            </div>
+            <div class="prod1">
+                <h3>Carne</h3>
+                <br>
+                <div>
+                    <img src="Img/carne.jpg" alt="">
+                </div>
+
+                <div>
+
+                    Un clásico irresistible. Rellena de jugosa carne de res sazonada con
+                    especias, cebolla y aceitunas, esta empanada es un deleite para los
+                    amantes de la carne.
+                </div>
+            </div>
+            <br>
+            <div class="prod2">
+
+                <h3>Jamon y queso</h3>
+
+                <br>
+                <div>
+                    <img src="Img/jyq.jpg" alt="">
+                </div>
+                <div>
+                    La combinación perfecta de sabores.
+                    El jamón ahumado se mezcla con queso derretido, creando un relleno cremoso y salado que no
+                    puedes resistir.
+                </div>
+            </div>
+            <br>
+            <div class="prod3">
+
+                <h3>Atun</h3>
+                <br>
+                <div>
+                    <img src="Img/atun.jpg" alt="">
+                </div>
+                <div>
+                    La combinación perfecta de sabores.
+                    El jamón ahumado se mezcla con queso derretido, creando un relleno cremoso y salado que no
+                    puedes resistir.
+                </div>
+            </div>
+            <br>
+            <div class="prod4">
+
+                <h3>Pollo</h3>
+
+                <br>
+                <div>
+                    <img src="Img/pollo.jpg" alt="">
+                </div>
+                <div>
+                    La combinación perfecta de sabores.
+                    El jamón ahumado se mezcla con queso derretido, creando un relleno cremoso y salado que no
+                    puedes resistir.
+                </div>
+            </div>
+            <br>
+            <div class="prod5">
+
+                <h3>Espinaca y Queso</h3>
+
+                <br>
+                <div>
+                    <img src="Img/verdura.jpg" alt="">
+                </div>
+                <div>
+                    La combinación perfecta de sabores.
+                    El jamón ahumado se mezcla con queso derretido, creando un relleno cremoso y salado que no
+                    puedes resistir.
+                </div>
+
+            </div>
+        </section>
+
+       
+        <!-- 
+        se le vinculó a la palabra "Aqui" un link para que nos redireccione al "whatsapp" de la empresa. -->
+
+        <section class="pedidos" id="pedido">
+            <h2>Hacenos tu pedido haciendo clic <a href="https://web.whatsapp.com/">aquí</a> <img class="whatsapp"
+                    src="Img/whatsapp2.png" alt=""></h2>
+        </section>
+        <hr> <!-- Línea divisoria  -->
+
+        <!--BOTONES FLOTANTES REDES SOCIALES - Sirve para mostrar las redes sociales de la "empresa" -->
+        <div>
+            <div class="botonera">
+                <input type="checkbox" id="btn-mas">
+                <div class="redes">
+                    <a href="http://wa.me/1166536245"><img src="./img/whatsapp2.png" alt=""></a>
+                    <a href="https://www.facebook.com/"><img src="./img/facebook.png" alt=""></a>
+                    <a href="https://www.instagram.com/"><img src="./img/instagram.png" alt=""></a>
+                    <a href="https://twitter.com/"><img src="./img/twitter.png" alt=""></a>
+                    <a href="https://www.linkedin.com/in/franco-andres-frasso-360b15250/"><img src="./img/linkedin.png"
+                            alt=""></a>
+                </div>
+                <div class="btn-mas">
+                    <label for="btn-mas" class="btn-mas2"> <img src="./img/redes.png" alt=""></label>
+                </div>
+            </div>
+        </div>
+        <!-- BOTON PARA IR A INICIO RAPIDO - Ahorra tiempo a la hora de scrollear para ir al principio de la landing page -->
+
+
+
+        <div class="botonscroll" id="scrollToTop">
+            <a href="#top"><img src="./img/flechas-arriba.png" alt="subir"></a>
+        </div>
+
+        <section>
+            <div class="SobreNosotros" id="Nosotros">
+                <h1>Sobre Nosotros</h1>
+                <div> <img src="Img/abuela1.webp" alt=""></div>
+
+                <hr> <!-- Línea divisoria  -->
+
+                <div class="info">En el corazón mismo de Argentina, nació una pequeña empresa que se convertiría en el
+                    símbolo del sabor y la tradición de las empanadas: María Marta y sus Empanadas Argentinas. Fundada
+                    por María Marta Rodríguez, una apasionada cocinera y amante de la comida, la historia de esta
+                    empresa está tejida con el espíritu inconfundible de la tierra argentina.
+                    <br>
+                    La historia de María Marta es una que se teje entre risas, ollas humeantes y reuniones familiares en
+                    torno a una mesa llena de empanadas. María Marta, con su carisma y su sazón única, comenzó a cocinar
+                    empanadas desde su hogar para compartir con amigos y vecinos. El aroma irresistible de sus
+                    creaciones se extendía por el barrio, atrayendo a todos aquellos que buscaban el auténtico sabor
+                    argentino.
+                    <br>
+                    Lo que comenzó como un pequeño pasatiempo culinario se convirtió rápidamente en una pasión y una
+                    visión. Con el tiempo, María Marta decidió compartir sus empanadas con un público más amplio,
+                    llevando sus creaciones a ferias locales y eventos comunitarios. La respuesta fue abrumadora: la
+                    gente no solo disfrutaba de sus empanadas, sino que también se enamoraba de la historia detrás de
+                    cada una.
+                    <br>
+                    Las empanadas de María Marta son más que simples bocados, son un pedazo de la cultura argentina en
+                    cada mordisco. Cada receta tiene raíces en tradiciones familiares y secretos transmitidos de
+                    generación en generación. La carne jugosa, el queso derretido y los sabores irresistibles evocan
+                    recuerdos de reuniones familiares y comidas compartidas con amor.
+                    <br>
+                    A medida que la demanda crecía, María Marta decidió dar un paso audaz y abrir su pequeña tienda de
+                    empanadas. El rincón acogedor se convirtió en un lugar de encuentro para los amantes de la comida,
+                    donde podían disfrutar de empanadas auténticas y llenas de historia. La tienda se llenaba de risas,
+                    conversaciones animadas y el sonido reconfortante de las empanadas crujientes.
+                    <br>
+                    La pasión y el esfuerzo de María Marta no pasaron desapercibidos. Pronto, su pequeña tienda ganó
+                    reconocimiento local y comenzó a recibir elogios por la autenticidad de sus empanadas y la atención
+                    a los detalles. María Marta se convirtió en un nombre sinónimo de calidad y tradición, y sus
+                    empanadas empezaron a encontrar su camino hacia los corazones y los paladares de cada vez más
+                    personas.
+                    <br>
+                    <hr> <!-- Línea divisoria  -->
+
+                    <div> <img src="Img/abuela2.webp" alt=""></div>
+                    <br>
+
+                    Hoy, María Marta y sus Empanadas Argentinas sigue creciendo, pero nunca ha perdido su esencia
+                    familiar y su pasión por la autenticidad. Cada empanada que sale de su cocina sigue siendo una pieza
+                    de la historia argentina, un tributo a las raíces y a la dedicación de una mujer que transformó su
+                    amor por la cocina en una empresa que trasciende fronteras.
+                    <br>
+
+                    Bienvenidos a la historia de María Marta y sus Empanadas Argentinas, donde el sabor de la tradición
+                    se mezcla con el calor de la hospitalidad argentina. Te invitamos a unirte a nosotros en este viaje
+                    culinario que celebra los sabores de la tierra y el espíritu inquebrantable de una pequeña empresa
+                    que conquistó el mundo con sus deliciosas empanadas. ¡Bienvenidos a María Marta, donde cada bocado
+                    es un abrazo de Argentina!
+                </div>
+                <br>
+
+
+            </div>
+        </section>
+
+
+        <!-- Formulario el cual para poder dejar datos de contacto, puede haber mas formatos este es un ejemplo de uno. -->
+
+        <section class="form">
+            <h2> ¡También podes dejarnos tu Mensaje completando este formulario !</h2>
+            <div class="FORMULARIO01" id="contactform">
+
+
+                <form action="" method="post">
+                    <div class="row">
+                        <div class="col">
+                            Nombre Completo
+                            <input class="controls" type="text" name="Nombres" id="Nombres"
+                                placeholder="Ingrese su Nombre">
+                            <label form="Ciudad">Ciudad</label>
+                            <input class="controls" type="text" name="ciudad" id="Ciudad"
+                                placeholder="Ingrese su Ciudad">
+                            <label form="Email">Codigo Postal</label>
+
+                            <div> <input class="controls" type="Codigo Postal" name="cp" id="CP" placeholder="CP"></div>
+                        </div>
+
+                        <div class="col">
+                            <label for="Email">Email</label>
+
+                            <div> <input class="controls" type="email" name="mail" id="mail"
+                                    placeholder="Ingrese su E-Mail">
+                            </div>
+
+
+                            <div>
+                                <label for="Provincia">Provincia</label>
+
+                                <select class="controls" id="Provincias" required name="provincia"
+                                    placeholder=" Seleccione la Provincia">
+                                    <option selected disabled value="">Seleccionar</option>
+                                    <option> Buenos Aires</option>
+                                    <option>Ciudad Autonoma de Buenos Aires</option>
+                                    <option> Catamarca</option>
+                                    <option> Chaco</option>
+                                    <option> Chubut</option>
+                                    <option>Córdoba</option>
+                                    <option>Corrientes</option>
+                                    <option>Entre Ríos</option>
+                                    <option>Formosa</option>
+                                    <option>Jujuy</option>
+                                    <option>La Pampa</option>
+                                    <option> La Rioja</option>
+                                    <option>Mendoza</option>
+                                    <option>Misiones</option>
+                                    <option>Neuquén</option>
+                                    <option>Río Negro</option>
+                                    <option>Salta</option>
+                                    <option>San Juan</option>
+                                    <option>San Luis</option>
+                                    <option>Santa Cruz</option>
+                                    <option> Santa Fe</option>
+                                    <option>Santiago del Estero</option>
+                                    <option>Tierra del Fuego, Antártida e Islas del Atlántico Sur</option>
+                                    <option>Tucumán</option>
+                                </select>
+                            </div>
+
+
+                            <div>
+                                <label for="Telefono">Telefono</label>
+
+                                <div> <input class="controls" type="text" name="numero" id="Tel"
+                                        placeholder="Ingrese su Numero de Contacto">
+                                </div>
+                            </div>
+                        </div>
+                        <textarea aria-controls="none" class="controls" name="mensaje" id="" cols="30"
+                            placeholder="Dejanos un Mensaje"></textarea>
+                        <input class="registrarse" type="submit" value="Enviar">
+
+                </form>
+        </section>
+    </main>
+
+    <!-- Inicia la seccion footer, donde pondremos enlases de interes y a traves de un iframe importado de google maps, colocaremos la ubicacion del local de empanadas -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer1">
+                <ul>
+                    <li>Contacto</li>
+                    <br>
+                    <li>Reclamos</li>
+                    <br>
+                    <li>Trabaja con Nosotros</li>
+                </ul>
+            </div>
+            <div class="footer2">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0769633304258!2d-58.3746387!3d-34.6022153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccbe19cfb818d%3A0x437e6b0baa047522!2sEmpanadas!5e0!3m2!1ses!2sbr!4v1692190913943!5m2!1ses!2sbr"
+                    width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="footer3">
+                <img src="Img/3-logo-blanco.png" alt="">
+
+            </div>
+        </div>
+    </footer>
+   <script src="./Script/script.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,386 @@
+*/* Estilos Globales */
+/* Centra el contenido del texto y usa la fuente 'Lato' o una fuente genérica sans-serif */
+* {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    list-style: none; /* Elimina los marcadores de lista por defecto */
+
+}
+body{
+    background-color: antiquewhite;
+
+}
+
+/* Quitar subrayado y cambiar colores de enlaces */
+a {
+    text-decoration: none; /* Quitar subrayado */
+    color: #81400a; /* Cambiar color normal de enlaces */
+}
+
+a:visited {
+    color: none; /* Cambiar color de enlaces visitados */
+}
+
+a:active {
+    color: #ff9900; /* Cambiar color de enlaces activos (cuando se hace clic) */
+}
+
+/* Estilo para el Título Principal */
+.tituloprincipal {
+    -webkit-text-stroke: 0.1px black; /* Agrega un contorno fino negro alrededor del texto */
+    font-size: x-large; /* Tamaño grande de fuente */
+
+
+
+}
+
+/* Estilo para la Barra de Navegación */
+nav {
+    display: block;
+    position: fixed; /* Fija la barra de navegación en su lugar */
+    width: 100%; /* Ancho completo */
+    height: 30px; /* Altura de la barra de navegación */
+    background-color: #C18E41; /* Color de fondo */
+    color: black; /* Color del texto */
+    border-radius: 0.5%; /* Bordes redondeados */
+    box-shadow: 3px 3px 10px #81400a; /* Sombra */
+    padding: -15px; /* Elimina el espacio interior (¡esto puede ser un error!) */
+    margin: -8px; /* Establece un margen negativo (¡esto puede ser un error!) */
+}
+
+/* Estilo para Imágenes */
+.img {
+    width: 300px; /* Ancho de la imagen */
+    height: 300px; /* Altura de la imagen */
+}
+
+/* Estilo para los Productos */
+.Productos {
+    color: white; /* Color del texto */
+    font-size: large; /* Tamaño de fuente grande */
+    font-family: 'Bebas Neue', sans-serif; /* Fuente personalizada o sans-serif */
+    font-family: 'Lato', sans-serif; /* Reemplaza la fuente anterior (¡esto puede ser un error!) */
+    background-color: #81400a; /* Color de fondo */
+    border-radius: 0.5%; /* Bordes redondeados */
+    box-shadow: 3px 3px 10px #ccc; /* Sombra */
+    font-weight: bold; /* Texto en negrita */
+}
+
+/* Estilo para Encabezados en Productos */
+.Productos h3 {
+    display: block; /* Muestra los encabezados como bloques */
+    text-align: center; /* Centra el texto */
+    color: white; /* Color del texto */
+}
+
+/* Estilo para Imágenes en Productos */
+.Productos img {
+    border: solid 1px black; /* Borde negro de 1px alrededor de las imágenes */
+}
+
+/* Efecto Hover en Imágenes de Productos */
+.Productos img:hover {
+    transition: 1.5s; /* Animación de transición durante 1.5 segundos */
+    transform: scale(1.15); /* Escala las imágenes al 115% en el efecto hover */
+}
+
+
+
+/* Estilo para la sección de Pedidos */
+.pedidos {
+    margin-top: 20px; /* Margen superior de 20px */
+    margin-bottom: 20px; /* Margen inferior de 20px */
+    font-size: larger; /* Tamaño de fuente más grande */
+}
+
+/* Estilo para el ícono de WhatsApp */
+.whatsapp {
+    width: 25px; /* Ancho de 25px */
+    height: 25px; /* Altura de 25px */
+}
+
+
+.prod1{
+    background-color: #FFBD59;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 columnas de igual tamaño */
+    grid-template-rows: 1fr; /* 1 fila */
+    gap: 10px; /* Espacio entre celdas */
+    border: 1px solid #ccc; /* Borde para visualización */
+    padding: 10px; /* Espacio interno */
+    text-align: center;
+}
+
+.prod2{
+    background-color: #FFBD59;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 columnas de igual tamaño */
+    grid-template-rows: 1fr; /* 1 fila */
+    gap: 10px; /* Espacio entre celdas */
+    border: 1px solid #ccc; /* Borde para visualización */
+    padding: 10px; /* Espacio interno */
+    text-align: center;
+}
+.prod3{
+    background-color: #FFBD59;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 columnas de igual tamaño */
+    grid-template-rows: 1fr; /* 1 fila */
+    gap: 10px; /* Espacio entre celdas */
+    border: 1px solid #ccc; /* Borde para visualización */
+    padding: 10px; /* Espacio interno */
+    text-align: center;
+}
+.prod4{
+    background-color: #FFBD59;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 columnas de igual tamaño */
+    grid-template-rows: 1fr; /* 1 fila */
+    gap: 10px; /* Espacio entre celdas */
+    border: 1px solid #ccc; /* Borde para visualización */
+    padding: 10px; /* Espacio interno */
+    text-align: center;
+}
+.prod5{
+    background-color: #FFBD59;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 columnas de igual tamaño */
+    grid-template-rows: 1fr; /* 1 fila */
+    gap: 10px; /* Espacio entre celdas */
+    border: 1px solid #ccc; /* Borde para visualización */
+    padding: 10px; /* Espacio interno */
+    text-align: center;
+}
+
+.footer-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* 3 columnas de igual tamaño */
+    grid-template-rows: 1fr; /* 1 fila */
+    gap: 10px; /* Espacio entre celdas */
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+   
+    max-height: 400px;
+
+    background-color: #C18E41;
+
+}
+
+.footer1{
+    display: flex;
+    padding: 0;
+    margin-top: 20%;
+}
+
+.footer3{
+    display: flex;
+    align-items: flex-end; /* Alineación en la parte inferior */
+    justify-content: flex-end; /* Alineación a la derecha */
+    
+}
+.footer3 img {
+    
+    width: 100px;
+    height: 100px;
+}
+
+
+
+/* BOTONERA FIJA */
+/* Estilos para la botonera fija */
+.botonera {
+    z-index: 11; /* Capa de profundidad z-index */
+    position: fixed; /* Posición fija en la ventana */
+    bottom: 20px; /* Distancia desde abajo de 20px */
+    right: 20px; /* Distancia desde la derecha de 20px */
+}
+
+/* Estilos para los íconos de redes sociales en la botonera */
+.botonera .redes img {
+    width: 25px; /* Ancho de 25px */
+    height: 25px; /* Altura de 25px */
+}
+
+/* Estilos para los íconos de "más" en la botonera */
+.botonera .btn-mas img {
+    width: 25px; /* Ancho de 25px */
+    height: 25px; /* Altura de 25px */
+}
+
+/* Estilos para el botón de mostrar más en la botonera */
+#btn-mas {
+    display: none; /* Ocultar el botón por defecto */
+}
+
+/* Estilos generales de la botonera */
+.botonera {
+    /* Posicionamiento y estilo */
+    position: fixed; /* Posición fija en la ventana */
+    bottom: 20px; /* Distancia desde abajo de 20px */
+    right: 20px; /* Distancia desde la derecha de 20px */
+
+    /* Estilos de los enlaces y botones en la botonera */
+    .redes a,
+    .btn-mas2 {
+        cursor: pointer;
+        display: block;
+        text-decoration: none;
+        background-color: #FFBD59;
+        border: solid 1px #81400a;
+        color: #fff;
+        width: 40px; /* Ancho de 40px */
+        height: 40px; /* Altura de 40px */
+        line-height: 55px; /* Alineación vertical */
+        text-align: center;
+        border-radius: 50%; /* Bordes redondeados */
+        box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4); /* Sombra */
+        transition: all 500ms ease; /* Transición suave */
+    }
+
+    /* Estilos para el comportamiento al pasar el mouse */
+    .redes a:hover {
+        background: white; /* Cambia el fondo al pasar el mouse */
+    }
+
+    .btn-mas2:hover {
+        background: white; /* Cambia el fondo al pasar el mouse */
+    }
+
+    /* Ajustes para la animación de aparición */
+    .redes a {
+        margin-bottom: -15px; /* Ajusta el espacio negativo para animación */
+        opacity: 0; /* Opacidad inicial */
+        visibility: hidden; /* No visible inicialmente */
+    }
+
+    /* Aparición de enlaces al seleccionar el botón "más" */
+    #btn-mas:checked~.redes a {
+        margin-bottom: 10px; /* Ajuste para la animación */
+        opacity: 1; /* Opacidad total */
+        visibility: visible; /* Visible */
+    }
+
+    /* Cambio de estilo para el botón "más" seleccionado */
+    #btn-mas:checked~.btn-mas .btn-mas2 {
+        background-color: #81400a; /* Cambio de color */
+    }
+}
+
+/* Estilos para el botón de scroll hacia arriba */
+.botonscroll img {
+    /* Posicionamiento y estilo */
+    position: fixed; /* Posición fija en la ventana */
+    bottom: 20px; /* Distancia desde abajo de 20px */
+    left: 20px; /* Distancia desde la izquierda de 20px */
+
+    /* Estilos del botón */
+    text-decoration: none;
+    background-color: #FFBD59;
+    border: solid 1px #81400a;
+    color: #fff;
+    width: 40px; /* Ancho de 40px */
+    height: 40px; /* Altura de 40px */
+    line-height: 55px; /* Alineación vertical */
+    text-align: center;
+    border-radius: 50%; /* Bordes redondeados */
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4); /* Sombra */
+    transition: all 500ms ease; /* Transición suave */
+    z-index: 9; /* Capa de profundidad z-index */
+}
+
+/* Estilos para el formulario de contacto */
+.FORMULARIO01 {
+    /* Espaciado y alineación */
+    padding: 20px;
+    text-align: center;
+    margin: 20px auto;
+
+    /* Estilos generales */
+    width: 60vw; /* Ancho del formulario */
+    color: white; /* Color del texto */
+
+    /* Fondo y sombra */
+    background-color: #81400a;
+    background-clip: border-box;
+    box-shadow: 3px 3px 10px #ccc;
+}
+
+/* Estilos para el campo de mensaje en el formulario */
+#mensaje {
+    height: 50px; /* Altura de 50px */
+    width: 100%; /* Ancho del 100% */
+    resize: none; /* Deshabilita el redimensionamiento */
+}
+
+/* Estilos para el campo de búsqueda */
+.busqueda {
+    border: 1px solid white; /* Borde de 1px blanco */
+    color: white; /* Color del texto */
+    margin-left: 3px; /* Margen izquierdo de 3px */
+    margin-top: 2px; /* Margen superior de 2px */
+}
+
+/* Estilos para el diseño de columnas */
+.row {
+    max-width: 800px; /* Ancho máximo de 800px */
+    text-align: center; /* Alineación de texto al centro */
+    margin: auto; /* Margen automático para centrar */
+}
+
+/* Estilos para las columnas */
+.col {
+    max-width: 800px; /* Ancho máximo de 800px */
+    text-align: center; /* Alineación de texto al centro */
+    margin: auto; /* Margen automático para centrar */
+}
+
+/* Estilos para los controles */
+.controls {
+    border: 1px solid white; /* Borde de 1px blanco */
+    width: 100%; /* Ancho del 100% */
+    border-radius: 0.5%; /* Bordes redondeados */
+    padding: 10px; /* Espaciado interno de 10px */
+    margin: 3px; /* Margen de 3px */
+    background-color: #FFBD59; /* Color de fondo */
+    color: black; /* Color del texto */
+    border: 1px solid rgb(163, 155, 155); /* Borde de 1px */
+    font-size: 15px; /* Tamaño de fuente de 15px */
+}
+
+/* Estilos para la sección "Sobre Nosotros" */
+.SobreNosotros {
+    /* Posicionamiento y dimensiones */
+    border-radius: 0.5%; /* Bordes redondeados */
+    box-shadow: 3px 3px 10px #ccc; /* Sombra */
+    padding: 15px; /* Espaciado interno */
+    width: 90%; /* Ancho del contenedor */
+    height: 400px; /* Altura del contenedor */
+    background-color: rgba(218, 200, 176, 0.938);
+
+    /* Scroll si el contenido excede el tamaño del contenedor */
+    overflow: auto;
+    margin: auto;
+}
+
+/* Estilos para las imágenes en "Sobre Nosotros" */
+.SobreNosotros img {
+    margin: 10px; /* Margen de 10px */
+    width: 450px; /* Ancho del 50% */
+    height: 350px; /* Altura del 30% */
+    border: solid 2px black; /* Borde de 2px sólido negro */
+}
+
+/* Estilos para la barra de desplazamiento en "Sobre Nosotros" */
+.SobreNosotros::-webkit-scrollbar {
+    width: 10px; /* Ancho de la barra de desplazamiento */
+    background-color: #888; /* Color de fondo del indicador */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #FFBD59; /* Color de fondo de la barra */
+}
+
+/* Estilos para la información */
+.info {
+    width: 50%; /* Ancho del 50% */
+    margin: auto; /* Margen automático para centrar */
+}
